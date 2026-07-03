@@ -2,17 +2,20 @@ const units = [
     {
         name: "Studio Apartment",
         price: "KSh 18,000/month",
-        description: "Ideal for individuals."
+        description: "Ideal for individuals.",
+        availability: "Available Now"
     },
     {
         name: "One Bedroom",
         price: "KSh 25,000/month",
-        description: "Comfortable living space."
+        description: "Comfortable living space.",
+        availability: "Available Soon"
     },
     {
         name: "Two Bedroom",
         price: "KSh 35,000/month",
-        description: "Perfect for families."
+        description: "Perfect for families.",
+        availability: "Available Now"
     }
 ];
 
@@ -26,6 +29,7 @@ units.forEach(unit => {
         <h3>${unit.name}</h3>
         <p>${unit.description}</p>
         <p>${unit.price}</p>
+        <p><strong>${unit.availability}</strong></p>
     `;
 
     unitsList.appendChild(card);
