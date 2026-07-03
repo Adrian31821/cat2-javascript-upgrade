@@ -1,0 +1,24 @@
+Adrian Kimani
+Implemented features
+
+ 1.Loop-rendered Dynamic Content
+I created an array of available units in script.js which included the name price and description
+and used the forEach()looping structure to dynamically generate apartment cards 
+and display them in the available units section instead of them being hardcoded.
+
+2.Dynamic add and remove elements
+I implemented a wishlist feature that enables users to enter apartment type and add it to their 
+wishlist. New list items are created using createElement(). Each item includes a remove button that deletes the item using remove().
+
+3. Form Handling
+I added a contact form with JS validation and used event.preventDefault() to stop the default form submission.
+One is able to read the user input using .value property.On the feedback page,
+success or error is displayed using textContext.
+
+4.Persistant State with localStorage
+I implemmented a dark toggle mode.
+The selected theme is saved using localStorage and is automatically restored when the page is reloaded.
+
+5.Banner click to reveal
+I added an interacrtive banner image and clicking the banner toggles additional
+information using classList.toggle()
