@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zawadi Apartments</title>
-
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,133 +11,208 @@
 
 <body>
 
-    <header>
+<header>
 
-        <h1><b>Zawadi Apartments</b></h1>
-
-    </header>
+    <h1>Zawadi Apartments</h1>
 
     <nav>
         <ul>
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#units">Units</a></li>
-            <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#location">Location</a></li>
         </ul>
     </nav>
 
-    <main>
+</header>
 
-        <section id="top">
-            <img src="images/banner.jpeg" alt="Front view of Greenview Apartments">
-            <h2>Welcome to Zawadi Apartments</h2>
+<main>
 
+<!-- ================= Banner ================= -->
 
-            <p>
-                Comfortable and affordable living in a secure environment that caters for all ensuring a safe and secure
-                environment for all.
+<section id="top">
 
+    <img
+        id="banner"
+        src="images/banner.jpeg"
+        alt="Apartment Banner">
 
-            </p>
+    <div id="bannerInfo" class="hidden">
 
-        </section>
+        <h3>Welcome Home!</h3>
 
-        <section id="about">
+        <p>
+            Zawadi Apartments provides modern,
+            affordable and secure apartments
+            in Kiambu with 24/7 security,
+            reliable water and spacious rooms.
+        </p>
 
-            <h2>About Zawadi Apartments</h2>
+    </div>
 
-            <img src="images/exterior.jpeg" alt="Exterior view of the apartment building">
+</section>
 
-            <p>
-                <b>Zawadi Apartments</b> offers modern housing with excellent amenities and convenient access to
-                nearby
-                services.We also ensure
-                that our residents have access to a range of amenities, including a fitness center, swimming pool, and
-                community lounge.
-                We are committed to providing a safe and welcoming environment for all our residents, with 24/7 security
-                and on-site management.
-                Whether you're looking for a cozy one-bedroom or a spacious three-bedroom apartment, Zawadi
-                Apartments has something for everyone.
-            </p>
-        </section>
+<!-- ================= Theme ================= -->
 
-        <section id="units">
-            <h2>Available Units</h2>
+<section>
 
-            <h3>Studio Apartment</h3>
-            <p>Ideal for individuals.</p>
+<h2>Website Theme</h2>
 
-            <h3>One Bedroom</h3>
-            <p>Comfortable living space.</p>
+<button id="themeBtn">
 
-            <h3>Two Bedroom</h3>
-            <p>Perfect for families.</p>
+Toggle Dark Mode
 
-        </section>
+</button>
 
-        <section id="amenities">
-            <h2>Amenities</h2>
-            <ul>
-                <li>Secure Parking</li>
-                <li>24/7 Security</li>
-                <li>Reliable Water Supply</li>
-                <li>Internet Access</li>
-            </ul>
-        </section>
+</section>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
+<!-- ================= About ================= -->
 
-                <img src="images/livingroom.jpeg" alt="Modern apartment living room">
+<section id="about">
 
-                <img src="images/kitchen.jpeg" alt="Apartment kitchen with fitted cabinets">
+<h2>About Us</h2>
 
-                <img src="images/bedroom.jpeg" alt="Spacious apartment bedroom">
+<img
+src="images/exterior.jpeg"
+alt="Apartment Exterior">
 
-                <img src="images/dining.jpeg" alt="Spacious dining area with modern furniture">
+<p>
 
-                <img src="images/parking.jpg" alt="Secure parking area">
+Zawadi Apartments offers modern,
+comfortable and affordable living
+spaces suitable for students,
+families and professionals.
 
-                <img src="images/exterior.jpeg" alt="Exterior view of the apartment building">
+</p>
 
-            </div>
-        </section>
+</section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
+<!-- ================= Dynamic Units ================= -->
 
-            <p>Email: info@zawadiapartments.com</p>
-            <p>Phone: +254 722 857 490</p>
+<section id="units">
 
-            <p>Kiambu, Kenya</p>
-        </section>
+<h2>Available Units</h2>
 
-        <section id="location">
-            <h2>Find Us Here</h2>
+<div id="unitsContainer">
 
-            <div class="map-placeholder">
-                Map Coming Soon
-            </div>
+</div>
 
-            <p>
-                Zawadi Apartments is conveniently located along the Nairobi Northern Bypass,
-                with easy access to schools, shopping centres,
-                hospitals, and public transport.
-            </p>
+</section>
 
-            <p>
-                Address: Nairobi Northern Bypass, Kiambu, Kenya
-            </p>
-        </section>
-    </main>
+<!-- ================= Wishlist ================= -->
 
-    <footer>
-        <p>&copy; 2026 Zawadi Apartments</p>
-        <p><a href="#top">Back to Top</a></p>
-    </footer>
+<section id="wishlist">
 
+<h2>Apartment Wishlist</h2>
+
+<p>
+
+Add the apartment you are interested in.
+
+</p>
+
+<input
+type="text"
+id="wishlistInput"
+placeholder="Enter apartment type">
+
+<button id="addBtn">
+
+Add
+
+</button>
+
+<ul id="wishlistItems">
+
+</ul>
+
+</section>
+
+<!-- ================= Gallery ================= -->
+
+<section>
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="images/livingroom.jpeg" alt="">
+<img src="images/kitchen.jpeg" alt="">
+<img src="images/bedroom.jpeg" alt="">
+<img src="images/dining.jpeg" alt="">
+<img src="images/parking.jpg" alt="">
+<img src="images/exterior.jpeg" alt="">
+
+</div>
+
+</section>
+
+<!-- ================= Contact ================= -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<label>Name</label>
+
+<input
+type="text"
+id="name">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email">
+
+<label>Message</label>
+
+<textarea
+id="message"></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+<p id="feedback"></p>
+
+</section>
+
+<!-- ================= Location ================= -->
+
+<section>
+
+<h2>Location</h2>
+
+<p>
+
+Kiambu,
+along Nairobi Northern Bypass.
+
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 Zawadi Apartments
+
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
