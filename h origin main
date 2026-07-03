@@ -1,5 +1,0 @@
-[33m97849e3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mpersonal/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add implementation notes
-[33m4a133c6[m Render apartment units dynamically
-[33m1ca48f9[m git add . git commit -m "Carry over Midterm baseline" git push -u classroom main
-[33m9c16852[m add deadline
-[33m54fd26e[m Initial commit
